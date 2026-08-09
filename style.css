@@ -320,7 +320,7 @@ footer p{
         display:block;
         position:absolute;
         right:20px;
-        top:4px;
+        top:20px;
         z-index:1001;
     }
 
@@ -442,4 +442,65 @@ footer p{
 
 .galeria img:hover{
     transform:scale(1.05);
+}
+
+
+/*=========================
+  OPINIONES
+=========================*/
+
+.opiniones{
+    padding:100px 8%;
+    background:#111;
+}
+
+.opiniones-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.opinion{
+    background:#202020;
+    padding:35px 30px;
+    border-radius:18px;
+    border-top:4px solid var(--amarillo);
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.estrellas{
+    color:var(--amarillo);
+    font-size:25px;
+    margin-bottom:20px;
+    letter-spacing:3px;
+}
+
+.opinion p{
+    color:#ddd;
+    font-size:17px;
+    line-height:28px;
+    margin-bottom:20px;
+}
+
+.opinion h3{
+    color:white;
+    font-size:18px;
+}
+
+@media (max-width:768px){
+    .opiniones{
+        padding:70px 20px;
+    }
+
+    .opiniones-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .opinion{
+        padding:30px 20px;
+    }
 }
